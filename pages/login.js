@@ -15,15 +15,14 @@ var login = function(){
         email_input.sendKeys("elizabeth.cobian7@gmail.com");
         password_input.sendKeys("divoom07");
         loginButton.click();
-        //expect(addTaskButton.isPresent()).toBe(true);
 
     };
 
      this.notExistingUser = function(){
 
         email_input.sendKeys("test@testing.com");
-        password_input.sendKeys("1234567");
         loginButton.click();
+        expect(element(by.css('.error_msg')).isPresent()).toBe(true);
 
     };
 };
