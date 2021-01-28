@@ -9,7 +9,7 @@ describe('Login Scenarios', function(){
 
         login.existingUser();
 
-        browser.sleep(8000);
+        browser.sleep(7000);
     });
 
     it('Error when the User does not Exist', function(){
@@ -17,7 +17,9 @@ describe('Login Scenarios', function(){
         browser.waitForAngularEnabled(false);
         login.get('https://todoist.com/users/showlogin');
 
-        
+        login.notExistingUser();
+
+        browser.sleep(7000);       
 
 
     });

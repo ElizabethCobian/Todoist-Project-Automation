@@ -3,7 +3,6 @@ var login = function(){
     var email_input = element(by.id('email'));
     var password_input = element(by.id('password'));
     var loginButton = element(by.css('.submit_btn'));
-    var addTaskButton = element(by.id('app_holder'));
 
     this.get = function(url){
         
